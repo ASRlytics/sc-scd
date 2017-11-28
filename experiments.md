@@ -148,7 +148,7 @@ A tolerance margin is also traditionally applied, since it is nearly impossible 
 
 ### Results
 
-First of all let's take a look at some training curves to get some insight about the speed and the convergence of the network under the different approaches (SC-CON and SC-ENT, using the augmented training dataset or only the original one). Here, accuracy is referred to the binary problem of whether the input pair of segments belong to the same speaker or not.
+First of all let's take a look at some training curves to get some insight about the speed and the convergence of the network under the different approaches (SC-CON and SC-ENT, using the augmented training dataset or only the original one). Here, accuracy is referred to the binary problem of whether the input pairs of segments belong to the same speaker or not.
 
 <center><img src="content/learning_curves.pdf" width="120%"> </center>
 
