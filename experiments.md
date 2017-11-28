@@ -14,7 +14,7 @@ use_math: true
 Two different architectures, depicted in the following figures - let's call them SC-CON and SC-ENT - were tried.
 
 <center><img src="content/sc-con.pdf"><font color="white">kkkkkkkkkkkk</font><img src="content/sc-ent.pdf"> </center>
-<center><i><font size="3">SC-CON (left) and SC-ENT (right) architecture for the implementation of the Siamese Network.</font></i></center>
+<center><i><font size="3">SC-CON (left) and SC-ENT (right) architectures for the implementation of the Siamese Network.</font></i></center>
 
 At each case, the architecture of the tied subnetworks used was the same and consisted of $3$ convolutional blocks ($32$, $64$, and $96$ filters) followed by $3$ dense blocks ($384$, $192$, and $96$ neurons). Each block had a batch normalization layer, as well as a dropout layer with $p=0.1$. The activation function used was ReLU, while the kernels were initialized based on Xavier initialization. For all the convolutional blocks, the size of the convolution window was $3\times3$ and the stride was equal to $1$ at both dimensions, while a max pooling of size $2\times2$ was applied. The corresponding python function (using the [Keras][keras] API) is:
 
