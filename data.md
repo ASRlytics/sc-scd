@@ -2,10 +2,9 @@
 layout: page
 title:  "Datasets"
 date:   2017-11-21
+use_math: true
 ---
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+
 # Datasets, Data Preparation, and Input Pipeline
 
 ### Training Phase
