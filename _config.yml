@@ -1,0 +1,18 @@
+# Setup
+title:        SC-SCD
+tagline:      Siamese Convolutional Networks for Speaker Change Detection
+baseurl:      ""
+paginate:     1
+
+# About/contact
+author:
+  name:       Nikos Flemotomos
+  url:        http://sail.usc.edu/people/students.htm
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
+#markdown: maruku
