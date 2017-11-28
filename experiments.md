@@ -158,4 +158,6 @@ For the testing set, it was observed during initial experimentation that the sec
 
 In order to find an "optimal" threshold $\theta$ the initial idea was to randomly create multiple validation sets, find the best threshold on them based on a grid search and take the average value. However, it was observed that this threshold was highly dependent on the testing dataset. Thus, the results are presented here for multiple values of the threshold $\theta$.
 
+<center><img src="content/finals.pdf" width="120%"> </center>
+
 [keras]: https://keras.io
