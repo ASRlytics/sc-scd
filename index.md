@@ -3,6 +3,7 @@ layout: page
 title: {{ site.name }}
 page_math: true
 ---
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 # Overview
 This is my (Nikolaos - *Nikos* - Flemotomos a.k.a. "team" DeepSpeech) final project report for the class [Deep Learning and its Applications][class], as offered during the Fall semester of 2017-2018 at the [University of Southern California][usc]. 
