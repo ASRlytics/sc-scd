@@ -1,7 +1,7 @@
 # Setup
 title:        SC-SCD
 tagline:      Siamese Convolutional Networks for Speaker Change Detection
-baseurl:      "https://nikosfl.github.io/sc-scd/index.html"
+baseurl:      "/sc-scd/index.html"
 paginate:     1
 
 # About/contact
