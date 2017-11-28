@@ -42,8 +42,8 @@ for i = 1,2,...,G:
            and 2p utterances from each one of them
       II]  with those utterances create Np same-speaker 
            and N(N-1)/2 different-speaker pairs
-      III] train the network for one epoch considering as 
-           training set the just created set of M minibatches 
+    train the network for one epoch considering as 
+     training set the just created set of M minibatches 
 ```
 The GPU and the CPU could work in parallel so that while the network was trained on GPU, the next batch $S_i$ was being loaded.
 
