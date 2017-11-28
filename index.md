@@ -24,7 +24,7 @@ Assuming that the desired behavior is a balance between missed detections and fa
 Here is an image demo of the result for a small segment of the test set:
 
 <center><img src="content/res.png" width="80%"></center>
-<i><font size="3">first row (up): the original signal in time domain, second row: the ground truth for the speaker turns, third row: the result of the proposed algorithm. (Sorry, no audio provided since [TIMIT][timit] - which is used for testing - is a licensed database)</font></i>
+<i><font size="3">first row (up): the original signal in time domain, second row: the ground truth for the speaker turns, third row: the result of the proposed algorithm. (Sorry, no audio provided since TIMIT - which is used for testing - is a licensed database)</font></i>
 
 For extensive experimental results, as well as for details about the evaluation metrics used and their definitions, please refer to the [Implementation and experiments](experiments.html) section.
 
