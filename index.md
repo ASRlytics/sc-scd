@@ -18,8 +18,9 @@ Speaker Change Detection (SCD) can be defined as dividing an audio signal into m
 Siamese networks, as introduced in [Chopra et al. 2005][Chopra2005] and [Hadsell et al. 2006][Hadsell2006], aim at learning a (dis)similarity metric between two inputs, by comparing their outputs, as produced by two identical subnetworks (with the same architecture and weights). Originally, it was suggested that this "comparison" is done based on the euclidean distance between the subnetworks' outputs, but other approaches can be also taken, as discussed in the [Implementation and experiments](experiments.html) section.
   
 # Main Results
+Assuming that the desired behavior is a balance between missed detections and false alarms (errors of Type I and II), the best system that was trained yielded an $MDR=29.22\%$, $FAR=27.08\%$ and $F_1 = 68.08$
 
-here insert video-audio with a snippet of the result.
+Here is a demo of the result for a small segment of the test set:
 
 For extensive experimental results, as well as for details about the evaluation metrics used and their definitions, please refer to the [Implementation and experiments](experiments.html) section.
 
