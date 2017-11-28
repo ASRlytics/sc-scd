@@ -126,7 +126,7 @@ def create_siamese_network(input_shape, architecture):
 
 ### Two different testing approaches
 
-Any recording where it was desired that the speaker homogeneous regions be found by the trained system had to be split into consecutive segments of the same duration as the training segments ($1.27$sec) and each segment had to be preprocessed with the same feature extraction technique appried during the training. Adjacent segments could then be compared throught the network to decide whether the segments belong to the same or different speakers. "Adjacent" segments can be defined in two different ways as shown in the following figures.
+Any recording where it was desired that the speaker homogeneous regions be found by the trained system had to be split into consecutive segments of the same duration as the training segments ($1.27$sec) and each segment had to be preprocessed with the same feature extraction technique applied during the training. Adjacent segments could then be compared throught the network to decide whether the segments belong to the same or different speakers. "Adjacent" segments can be defined in two different ways as shown in the following figures.
 
 <center><img src="content/Diagram3.pdf"><font color="white">kkkk</font><img src="content/Diagram42.pdf"> </center>
 <i><font size="3">Two different point of views about adjacent segments. (left): The signal is windowed in overlapping segments and 2 consecutive segments form a pair. (right): The signal is windowed in overlapping segments but each pair is formed by non-overlapping segments.</font></i> 
