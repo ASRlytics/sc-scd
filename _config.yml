@@ -14,5 +14,5 @@ gems:
   - jekyll-paginate
 
 #Others
-markdown: redcarpet
+markdown: kramdown
 #markdown: maruku
