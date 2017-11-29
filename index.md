@@ -11,7 +11,7 @@ This is my (Nikolaos - *Nikos* - Flemotomos a.k.a. "team" DeepSpeech) final proj
 # What is SCD?
 Speaker Change Detection (SCD) can be defined as dividing an audio signal into multiple audio chunks such that each of them denotes a speaker homogeneous region. Any time interval in the signal containing only one speaker can be thought of as a 'speaker homogeneous region'. SCD is a very important issue in Speech Processing with various applications, such as Speaker Tracking (SCD + Speaker Verification) or Speaker Diarization (SCD + Speaker Clustering). In this work, time intervals of silence between speakers or overlapping speech were not taken into consideration. A hypothetical output of an SCD system is depicted in the following figure:
 
-<center><img src="content/scd_eg.png" width="50%"></center>
+<center><img src="content/scd_egtr.png" width="50%"></center>
 <i><font size="3">The mel-spectrogram of a signal where the timestamps of the true speaker turns (solid green lines) and the speaker turns predicted by a hypothetical Speaker Change Detector (dashed white lines) are denoted. The correct detections are denoted assuming that a reasonable tolerance margin is applied.</font></i>
 
 # What are Siamese Neural Networks?
