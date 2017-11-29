@@ -79,7 +79,7 @@ $$L = (1-Y)E^2 + Y\max\{0, m-E\}^2$$
 
 where 
 
-$$D = ||G(X_1) - G(X_2)||$$
+$$E = ||G(X_1) - G(X_2)||$$
 
 with $X_1$, $X_2$ the two inputs and $Y$ beign equal to $0$ if the two inputs are labeled "similar" and $1$ otherwise. The margin $m$ is a design parameter which was chosen $m=1$.
 
