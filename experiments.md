@@ -150,7 +150,7 @@ A tolerance margin is also traditionally applied, since it is nearly impossible 
 
 First of all let's take a look at some training curves to get some insight about the speed and the convergence of the network under the different approaches (SC-CON and SC-ENT, using the augmented training dataset or only the original one). Here, accuracy is referred to the binary problem of whether the input pairs of segments belong to the same speaker or not.
 
-<center><img src="content/learning_curves.png" width="90%"> </center>
+<center><img src="content/learning_curvestr.png" width="90%"> </center>
 
 It is observed that in the case of the SC-ENT architecture the convergence (in terms of the training loss minimization) is significantly faster when using the augmented data. However, the final performance is consistently better without any augmentation. Additionally, it seems that SC-ENT yields better results that SC-CON.
 
