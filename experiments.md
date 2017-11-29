@@ -13,7 +13,7 @@ use_math: true
 
 Two different architectures, depicted in the following figures - let's call them SC-CON and SC-ENT - were tried.
 
-<center><img src="content/sc-con.pdf"><font color="white">kkkkkkkkkkkk</font><img src="content/sc-ent.pdf"> </center>
+<center><img src="content/sc-con.png"><font color="white">kkkkkkkkkkkk</font><img src="content/sc-ent.png"> </center>
 <center><i><font size="3">SC-CON (left) and SC-ENT (right) architectures for the implementation of the Siamese Network.</font></i></center>
 
 At each case, the architecture of the tied subnetworks used was the same and consisted of $3$ convolutional blocks ($32$, $64$, and $96$ filters) followed by $3$ dense blocks ($384$, $192$, and $96$ neurons). Each block had a batch normalization layer, as well as a dropout layer with $p=0.1$. The activation function used was ReLU, while the kernels were initialized based on Xavier initialization. For all the convolutional blocks, the size of the convolution window was $3\times3$ and the stride was equal to $1$ at both dimensions, while a max pooling of size $2\times2$ was applied. The corresponding python function (using the [Keras][keras] API) is:
@@ -128,7 +128,7 @@ def create_siamese_network(input_shape, architecture):
 
 Any recording where it was desired that the speaker homogeneous regions be found by the trained system had to be split into consecutive segments of the same duration as the training segments ($1.27$sec) and each segment had to be preprocessed with the same feature extraction technique applied during the training. Adjacent segments could then be compared throught the network to decide whether the segments belong to the same or different speakers. "Adjacent" segments can be defined in two different ways as shown in the following figures.
 
-<center><img src="content/Diagram3.pdf"><font color="white">kkkk</font><img src="content/Diagram42.pdf"> </center>
+<center><img src="content/Diagram3.png"><font color="white">kkkk</font><img src="content/Diagram42.png"> </center>
 <i><font size="3">Two different point of views about adjacent segments. (left): The signal is windowed in overlapping segments and 2 consecutive segments form a pair. (right): The signal is windowed in overlapping segments but each pair is formed by non-overlapping segments.</font></i> 
 
 ### Evaluation Metrics
@@ -150,7 +150,7 @@ A tolerance margin is also traditionally applied, since it is nearly impossible 
 
 First of all let's take a look at some training curves to get some insight about the speed and the convergence of the network under the different approaches (SC-CON and SC-ENT, using the augmented training dataset or only the original one). Here, accuracy is referred to the binary problem of whether the input pairs of segments belong to the same speaker or not.
 
-<center><img src="content/learning_curves.pdf" width="120%"> </center>
+<center><img src="content/learning_curves.png" width="120%"> </center>
 
 It is observed that in the case of the SC-ENT architecture the convergence (in terms of the training loss minimization) is significantly faster when using the augmented data. However, the final performance is consistently better without any augmentation. Additionally, it seems that SC-ENT yields better results that SC-CON.
 
@@ -158,6 +158,6 @@ For the testing set, it was observed during initial experimentation that the sec
 
 In order to find an "optimal" threshold $\theta$ the initial idea was to randomly create multiple validation sets, find the best threshold on them based on a grid search and take the average value. However, it was observed that this threshold was highly dependent on the testing dataset. Thus, the results are presented here for multiple values of the threshold $\theta$.
 
-<center><img src="content/finals.pdf" width="120%"> </center>
+<center><img src="content/finals.png" width="120%"> </center>
 
 [keras]: https://keras.io
