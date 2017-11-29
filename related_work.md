@@ -13,6 +13,8 @@ During the last few years, there is an interest to apply Deep Learning technique
 
 All the approaches presented above treat initially the speech signal as a concatenation of low-dimensional MFCCs. However, this preprocessing may lead to information loss as far as speaker characteristics are concerned. In order to have a 'raw' form of the signal, we can represent each segment by its spectrogram (2D representation similar to images) and use convolutional kernels to learn all the relevant features ([Lukic et al. 2016][Lukic2016], [Cyrta et al. 2017][Cyrta2017], [Hruz and Zajic 2017][Hruz2017]).
 
+In this work, it is suggested that the strength of the Convolutional Networks is used to tackle the problem of Speaker Change Detection, by applying them in a siamese architecture framework.
+
 [Kotti2008]: http://www.sciencedirect.com/science/article/pii/S016516840700391X
 [Anguera2012]: http://ieeexplore.ieee.org/abstract/document/6135543/
 [Sell2014]: http://ieeexplore.ieee.org/abstract/document/7078610/
