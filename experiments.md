@@ -16,7 +16,7 @@ Two different architectures, depicted in the following figures - let's call them
 <center><img src="content/sc-contr.png" width="40%"><font color="white">___________</font><img src="content/sc-enttr.png" width="40%"> </center>
 <center><i><font size="3">SC-CON (left) and SC-ENT (right) architectures for the implementation of the Siamese Network.</font></i></center>
 
-At each case, the architecture of the tied subnetworks used was the same and consisted of $3$ convolutional blocks ($32$, $64$, and $96$ filters) followed by $3$ dense blocks ($384$, $192$, and $96$ neurons). Each block had a batch normalization layer, as well as a dropout layer with $p=0.1$. The activation function used was ReLU, while the kernels were initialized based on Xavier initialization. For all the convolutional blocks, the size of the convolution window was $3\times3$ and the stride was equal to $1$ at both dimensions, while a max pooling of size $2\times2$ was applied. The corresponding python function (using the [Keras][keras] API) is:
+At each case, the architecture of the tied subnetworks used was the same and consisted of $3$ convolutional blocks ($32$, $64$, and $96$ filters) followed by $3$ dense blocks ($384$, $192$, and $96$ neurons). Each block had a batch normalization layer, as well as a dropout layer with $p=0.1$. The activation function used was ReLU, while the kernels were initialized based on Xavier initialization. For all the convolutional blocks, the size of the convolution window was $3\times3$ and the stride was equal to $1$ at both dimensions, while a max pooling of size $2\times2$ was applied. The corresponding Python function (using the [Keras][keras] API) is:
 
 ```python
 from keras.models import Model
@@ -158,6 +158,6 @@ For the testing set, it was observed during initial experimentation that the sec
 
 In order to find an "optimal" threshold $\theta$ the initial idea was to randomly create multiple validation sets, find the best threshold on them based on a grid search and take the average value. However, it was observed that this threshold was highly dependent on the testing dataset. Thus, the results are presented here for multiple values of the threshold $\theta$.
 
-<center><img src="content/finalstr.png" width="90%"> </center>
+<center><img src="content/finalstr.png" width="100%"> </center>
 
 [keras]: https://keras.io
