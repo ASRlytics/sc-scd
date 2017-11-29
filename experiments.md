@@ -152,7 +152,7 @@ First of all let's take a look at some training curves to get some insight about
 
 <center><img src="content/learning_curvestr.png" width="90%"> </center>
 
-It is observed that in the case of the SC-ENT architecture the convergence (in terms of the training loss minimization) is significantly faster when using the augmented data. However, the final performance is consistently better without any augmentation. Additionally, it seems that SC-ENT yields better results that SC-CON.
+It is observed that in the case of the SC-ENT architecture the convergence (in terms of the training loss minimization) is significantly faster when using the augmented data. However, the final performance is consistently better without any augmentation. Additionally, it seems that SC-ENT yields better results than SC-CON.
 
 For the testing set, it was observed during initial experimentation that the second approach described (comparing non-overlapping consecutive segments) was giving significantly better results, so those are the only ones which are going to be presented here. Specifically, the testing recording was split into small chunks as explained previously with a time shift of $d=0.1$sec. Adjacent segments were being compared and when the likelihood (for SC-ENT) or the distance (for SC-CON) was bigger than a specified threshold $\theta$ it was decided that the segments belong to different speakers. A smoothening postprocessing was applied by not allowing two consecutive speaker changes happening in less than 0.2sec. If consecutive speaker turns were found with distance less $0.2$sec  between them, only one speaker turn was kept and it was assumed that it happened in the time average of all those speaker changes that the algorithm found.
 
